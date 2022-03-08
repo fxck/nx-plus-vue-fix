@@ -1,0 +1,10 @@
+import { ExecutorContext } from '@nrwl/devkit';
+import { BrowserExecutorSchema } from './executors/browser/schema';
+import { LibraryExecutorSchema } from './executors/library/schema';
+export declare function modifyIndexHtmlPath(config: any, options: BrowserExecutorSchema, context: ExecutorContext): void;
+export declare function modifyEntryPoint(config: any, options: BrowserExecutorSchema, context: ExecutorContext): void;
+export declare function modifyTsConfigPaths(config: any, options: BrowserExecutorSchema | LibraryExecutorSchema, context: ExecutorContext): void;
+export declare function modifyCachePaths(config: any, context: ExecutorContext): void;
+export declare function modifyTypescriptAliases(config: any, options: BrowserExecutorSchema | LibraryExecutorSchema, context: ExecutorContext): void;
+export declare function modifyCopyAssets(config: any, options: LibraryExecutorSchema, context: ExecutorContext, projectRoot: string): void;
+export declare function modifyBabelLoader(config: any, babelConfig: string, context: ExecutorContext): void;
